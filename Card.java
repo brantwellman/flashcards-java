@@ -1,17 +1,14 @@
 class Card {
-  private String question;
-  private String answer;
+  private final String question;
+  private final String answer;
 
-  public void setQuestion(String q) {
-    question = q;
+  public Card(String question, String answer) {
+    this.question = question;
+    this.answer = answer;
   }
 
   public String getQuestion() {
     return question;
-  }
-
-  public void setAnswer(String a) {
-    answer = a;
   }
 
   public String getAnswer() {
